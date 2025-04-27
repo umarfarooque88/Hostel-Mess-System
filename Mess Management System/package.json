@@ -1,0 +1,17 @@
+{
+  "name": "messsysapp",
+  "productName": "Shree Sai Hotel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-packager": "^17.1.2"
+  }
+}

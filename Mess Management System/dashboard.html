@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Umar Farooque">
+    <title>Owner Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+
+        <div class="logoClass" id="logoClass"> <!-- Added ID for event listener -->
+            <img src="icon.png" id="logo" width="60" height="55" alt="">
+            <p id="logoText">Shree Sai Hotel</p>
+        </div>
+
+        <a href="#" id="addStudentBtn">Add New Customer</a>
+        <a href="#" id="manageAttendanceBtn">Manage Attendance</a>
+    </div>
+
+    <div class="content" id="contentArea">
+        <h1>Shree Sai Hotel</h1>
+
+        <div class="stats-container">
+            <div class="stat-box" id="registeredStudentsBox">
+                <h2>Registered Customers</h2>
+                <p id="registeredStudentsCount">0</p>
+            </div>
+            <div class="stat-box" id="expiredMealsBox">
+                <h2>Expired Meals</h2>
+                <p id="expiredMealsCount">0</p>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+        // JavaScript to reload the page when clicking on the logoClass div
+        document.getElementById('logoClass').addEventListener('click', function() {
+            location.reload(); // Reload the current page
+        });
+    </script>
+        
+
+</body>
+</html>

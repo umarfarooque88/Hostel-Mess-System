@@ -1,0 +1,416 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.logoClass{
+    display: flex;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    border:solid 2px #f8f7eb ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logo{
+    padding-right: 10px;
+}
+
+#logoText{
+    margin-top: 10px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    background: #02468a;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#contentArea {
+    background-color: #f8f7eb;
+}
+
+/* Styles for the dashboard header */
+.content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #101820FF;
+    text-align: center; /* Center the h1 heading */
+}
+
+.content p {
+    color: #101820FF;
+    text-align: center; /* Center the h1 heading */
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #0056b3;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background: #003d7a;
+}
+
+#addStudentBtn, #manageAttendanceBtn {
+    background-color: #4e8bec;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15.7px;
+    text-align: center;
+}
+
+#addStudentBtn:hover{
+    background-color: rgb(39, 122, 229);
+
+}
+#manageAttendanceBtn:hover{
+    background-color: rgb(39, 122, 229);
+}
+
+
+/* Content Styles */
+.content {
+    flex: 1;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+/* Form Styles */
+input, button {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4e8bec;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+button:hover {
+    background-color: rgb(23, 112, 227);
+}
+
+#searchBar {
+    width: 73%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-right: 10px;
+}
+
+#searchButton {
+    width: 25%;
+}
+
+#statusMessage {
+    color: green;
+    margin-top: 10px;
+    align-items: start;
+}
+
+/* Table Container Styles */
+.table-container {
+    max-height: 450px; /* Increased maximum height for the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures the columns respect the widths set below */
+}
+
+th, td {
+    border: 1px solid #001F3F;
+    padding: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    font-size: 18px;
+}
+
+th {
+    background-color: #001F3F;
+    color: white;
+}
+
+/* Specific column width adjustments */
+th:nth-child(1), td:nth-child(1) { /* Sr. No. column */
+    width: 5%; /* Keep this narrow */
+}
+
+th:nth-child(2), td:nth-child(2) { /* Photo column */
+    width: 10%; /* Small width for the photo */
+}
+
+th:nth-child(3), td:nth-child(3) { /* Name column */
+    width: 40%; /* Larger width for the name */
+    word-wrap: break-word; /* Allow long names to wrap to the next line */
+}
+
+th:nth-child(4), td:nth-child(4) { /* Meal marked column */
+    width: 10%; /* Short width for the meal marks */
+}
+
+th:nth-child(5), td:nth-child(5) { /* Meal marked column */
+    width: 30%; /* Short width for the meal marks */
+}
+
+
+
+
+
+
+
+/* Photo column adjustments */
+td img {
+    width: 70px;
+    height: 60px;
+    object-fit: cover;
+    /* margin-top: 2px; */
+}
+
+.view-student img {
+    display: none;
+}
+
+.view-student p {
+    display: flex;
+    font-size: 18px;
+}
+
+
+
+.deleteStudentBtn {
+    background-color: rgb(237, 53, 53);
+    width: 25%;
+}
+
+
+
+#resetMealsBtn {
+    background-color: #f44336;
+    width: 25%;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    input, button {
+        padding: 8px;
+    }
+}
+
+/* View Student Details Section */
+.view-student {
+    margin-top: 0px;
+}
+
+.back-button {
+    margin-top: 20px;
+    background-color: #4e8bec;
+}
+
+.expired {
+    color: red;
+    font-weight: bold;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+
+
+.meal-history table {
+    width: 50%;
+}
+
+.scrollable-table {
+    max-height: 210px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    border: 1px solid #ccc; /* Optional: Adds a border */
+    margin-top: 10px; /* Optional: Adds some spacing above the table */
+    width: 50%;
+}
+
+.scrollable-table table {
+    width: 100%; /* Ensures the table takes full width */
+    border-collapse: collapse; /* Merges borders for a cleaner look */
+}
+
+.scrollable-table th, .scrollable-table td {
+    padding: 8px; /* Adds some padding inside table cells */
+    text-align: left; /* Aligns text to the left */
+    border-bottom: 1px solid #ddd; /* Adds a border below each row */
+}
+
+
+.stats-container {
+    display: flex;
+    justify-content: left; /* Center the boxes horizontally */
+    margin-top: 40px; /* Spacing between the heading and boxes */
+}
+
+.stat-box {
+    background-color: #4e8bec; /* Background color for the boxes */
+    color: white; /* Text color */
+    padding: 10px; /* Increased padding for a more spacious look */
+    border-radius: 10px; /* More pronounced rounded corners */
+    margin: 0 10px; /* Spacing between the boxes on both sides */
+    width: 250px; /* Slightly increased width for the boxes */
+    text-align: center; /* Center text in boxes */
+    box-shadow: 1px 1px 10px .5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+
+.stat-box h2 {
+    margin: 5px; /* Remove default margin for headings */
+    font-size: 20px; /* Larger font size for headings */
+}
+
+.stat-box p {
+    margin-top: 20px; /* Spacing between heading and count */
+    margin-bottom: 5px;
+    font-size: 30px; /* Larger font size for counts */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+.table-container table td {
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.table-container table button {
+    width: 20%;
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.table-container table img {
+    width: 70px;
+    height: 70px;
+}
+
+
+.markLunchBtn{
+    text-align: center;
+    width: 50%;
+}
+
+
+/* Table column width adjustment */
+.meal-history table {
+    width: 100%; /* Ensure the table takes full width */
+    table-layout: fixed; /* Makes columns respect the width setting */
+}
+
+.meal-history th,
+.meal-history td {
+    padding: 8px; /* Basic padding */
+    border-bottom: 1px solid #ddd; /* Optional: Border between rows */
+}
+
+/* Adjust specific column widths */
+.meal-history th:nth-child(1),
+.meal-history td:nth-child(1) {
+    width: 30%; /* Adjust width for Date column */
+}
+
+.meal-history th:nth-child(2),
+.meal-history td:nth-child(2) {
+    width: 30%; /* Adjust width for Time column */
+}
+
+.meal-history th:nth-child(3),
+.meal-history td:nth-child(3) {
+    width: 40%; /* Adjust width for Meal Type column */
+}
+
+.meal-history {
+    max-height: 250px;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+/* CSS for Payment Input Field and Save Button */
+#editPayment {
+    font-size: 15px;
+    padding: 10px;
+    width: 35%;
+    border: .6px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+#savePaymentBtn {
+    font-size: 15px;
+    padding: 10px;
+    width: 15%;
+    border-radius: 8px;
+}
+
+
+
+.back-button{
+    margin-bottom: 0px;
+}
+
+h3{
+    margin-bottom: 0px;
+}
