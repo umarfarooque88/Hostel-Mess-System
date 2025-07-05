@@ -1,30 +1,29 @@
-# Hotel - Hostel Mess System
+# Hostel Mess Management System – Shree Sai Mess
 
-A web-based solution to manage the hostel mess system at a **hotel**. The system allows the owner to:
-- Register students
-- Track daily meal attendance (Lunch & Dinner)
-- Manage student payments
-- View meal history and reset meal counts
-- Receive email notifications when meals are marked
-- Search for students and manage attendance data using Google Sheets integration
+A real-world hostel mess management web app built for Shree Sai Mess, Loni Kalbhor. It tracks student meals with photo-based profiles, Firebase backend, and daily lunch/dinner logs.
 
-## Features
-- **Student Registration**: Add new students with their photo and meal details.
-- **Meal Attendance Tracking**: Mark meals for lunch and dinner with limits on meal counts.
-- **Payment Management**: Track payments and meal counts for students.
-- **Google Sheets Integration**: Store data in Google Sheets for easy access and management.
-- **Email Notifications**: Students receive notifications when meals are marked.
-- **Search and Manage Attendance**: Search students by serial number, name, or mobile number, and manage their meal records.
+## 📌 Features
+- 🔍 Student search by name, serial, or phone
+- 📷 Photo upload for each student
+- 🍱 Mark lunch & dinner with daily limit checks
+- 🚫 Max 30 meals / 35 days per student
+- 📆 Attendance tracking by date + type
+- 🔁 Reset meal button
+- 💰 Payment status field
+- 📧 Email field (optional)
+- 🧾 Registration date recorded
+- 📊 Real-time Firestore integration
 
-## Technologies Used
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Firebase Authentication, Firestore
-- **APIs**: Google Sheets API
+## 🛠️ Tech Stack
+- Frontend: HTML, CSS, JavaScript
+- Backend: Firebase Firestore
+- Hosting: Netlify / Firebase Hosting
+- Auth (optional): Firebase Auth (Owner login)
 
-## Installation
-1. Clone this repository: `git clone https://github.com/your-username/Hotel-Hostel-Mess-System.git`
-2. Set up Firebase and Google Sheets API credentials.
-3. Run the project.
+## 🏆 Real-world Usage
+Currently used by **Shree Sai Mess** in Loni Kalbhor for managing 100+ students. Designed for daily operational needs of a hostel mess business.
 
-## Contributing
-Feel free to fork the repository and submit pull requests with your contributions.
+## 🔮 Future Enhancements
+- UI/UX improvements (Tailwind or Material UI)
+- Admin dashboard analytics
+- Print/export meal history
